@@ -37,7 +37,7 @@ letter-spacing: 0.03em;
 text-decoration: none;
  }
 
-.navigation-bar .navigation-link {
+ .navigation-link {
 color: var(--dominant-color);
 font-weight: 500;
 font-size: 14px;
@@ -54,7 +54,14 @@ text-decoration: none;
   color: var(--blue-text);
  }
 
+ .active {
+  color: var(--blue-text);
+ }
  
+ .active-button {
+  color: var(--blue-text);
+ }
+
  .contacts .contacts-link {
    color: var(--paragraph-color);
    font-weight: 500;
@@ -62,6 +69,10 @@ text-decoration: none;
    line-height: 1.2;
    letter-spacing: 0.02em;
    text-decoration: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap:10px;
     }
    
     .contacts .contacts-link:hover {
@@ -179,6 +190,10 @@ height: 708px;
   color:var(--blue-text)
 }
 
+.footer-list .link-address:focus {
+  color:var(--blue-text)
+}
+
 .footer-list .contact-link{
   color:var(--paragraph-color);
   font-size: 14px;
@@ -189,6 +204,10 @@ height: 708px;
 }
 
 .footer-list .contact-link:hover {
+  color:var(--blue-text);
+}
+
+.footer-list .contact-link:focus {
   color:var(--blue-text);
 }
 
@@ -291,18 +310,6 @@ h2 {
   gap:30px;
 }
 
-.contacts-item  {
-  color: var(--paragraph-color);
-}
-
-.contacts-item:hover{
-  color: var(--blue-text);
-}
-
-.contacts-icon{
-  margin-right: 5px;
-}
-
 /*Seccion Principal*/ 
 .principal-section {
   display: flex;
@@ -327,7 +334,6 @@ background-color: var(--second-background);
 .about-us-icon {
   margin: 25px 100px;
 }
-
 
 
 /*Seccion servicios*/
@@ -368,26 +374,24 @@ border-radius: 4px;
 
 .social-networks-item { 
   background-color: var(--white-font);
+  color: var(--border-icon);
   border-radius: 50%;
   width: 44px;
   height: 44px;
   display:flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .social-networks-item:hover {
   background-color: var(--blue-text);
+  color:var(--white-font);
   cursor: pointer;
 }
 
-.social-networks-icon {
-  fill: var(--border-icon);
-}
-
-.social-networks-icon:hover {
-  fill: var(--white-font);
+.social-networks-item:focus {
+  background-color: var(--blue-text);
+  color:var(--white-font);
 }
 
 /*Clientes regulares*/
@@ -403,6 +407,7 @@ border-radius: 4px;
   width: auto;
   height: 81px;
   border: 1px solid var(--border-icon);
+  color:var(--border-icon);
   border-radius: 4px;
   display: flex; 
   align-items: center;
@@ -410,20 +415,14 @@ border-radius: 4px;
 
 .clients-item:hover {
   border-color: var(--blue-text);
+  color:var(--blue-text);
+  cursor: pointer;
+  
 }
-
 
 .clients-icon {
-  margin: 21px 50px;
-  fill: var(--border-icon);
+  margin: 21px 50px; 
 }
-
-.clients-icon:hover {
-  fill:var(--blue-text);
-  cursor: pointer;
-}
-
-
 
 /*Footer*/
 
