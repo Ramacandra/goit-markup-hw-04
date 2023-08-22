@@ -401,10 +401,11 @@ border-radius: 4px;
   justify-content: space-between;
   align-items: center;
   padding-top: 44px;
+
 }
 
 .clients-item {
-  width: auto;
+  width: 170px;
   height: 81px;
   border: 1px solid var(--border-icon);
   color:var(--border-icon);
@@ -417,11 +418,23 @@ border-radius: 4px;
   border-color: var(--blue-text);
   color:var(--blue-text);
   cursor: pointer;
-  
+}
+
+
+.clients-icon-left {
+  padding: 21px 60px; 
 }
 
 .clients-icon {
-  margin: 21px 50px; 
+  padding: 21px 45px; 
+}
+
+.link:visited {
+  color:var(--border-icon);
+}
+
+.link:hover {
+  color:var(--blue-text)
 }
 
 /*Footer*/
