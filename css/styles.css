@@ -431,7 +431,6 @@ border-radius: 4px;
 
 .link {
   color: var(--border-icon);
-  fill:  var(--border-icon);
 }
 
 .link:visited {
