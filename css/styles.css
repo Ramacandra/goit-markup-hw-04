@@ -429,6 +429,11 @@ border-radius: 4px;
   padding: 21px 45px; 
 }
 
+.link {
+  color: var(--border-icon);
+  fill:  var(--border-icon);
+}
+
 .link:visited {
   color:var(--border-icon);
 }
