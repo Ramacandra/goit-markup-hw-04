@@ -423,10 +423,14 @@ border-radius: 4px;
 
 .clients-icon-left {
   padding: 21px 60px; 
+  width: 170px;
+  height: 81px;
 }
 
 .clients-icon {
   padding: 21px 45px; 
+  width: 170px;
+  height: 81px;
 }
 
 .link {
